@@ -1,0 +1,12 @@
+<!--Search google:  Preview an image before it is uploaded
+-->
+
+<input type="file" accept="image/*" onchange="loadFile(event)">
+<img id="output"/>
+<script>
+    var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+

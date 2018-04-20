@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <?php
+    $datestring = 'Year: %Y Month: %m Day: %d - %h:%i %a';
+    $time = time();
+    echo gmdate($datestring, $time);
+    ?>
+</body>
+</html>
